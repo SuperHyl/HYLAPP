@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="catrgory" id="ijY-mb-rh1" customClass="hylCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ijY-mb-rh1" id="Tdh-lc-fgl">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCM-mo-h5F">
+                        <rect key="frame" x="10" y="2" width="305" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyn-lR-wwC">
+                        <rect key="frame" x="0.0" y="41" width="320" height="2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="rIE-Ou-LK5"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="026-cM-ELS">
+                        <rect key="frame" x="0.0" y="2" width="5" height="39"/>
+                        <color key="backgroundColor" red="1" green="0.17223932119999999" blue="0.27386251700000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="aX0-LQ-pKF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RCM-mo-h5F" firstAttribute="leading" secondItem="Tdh-lc-fgl" secondAttribute="leading" constant="10" id="Hmn-gx-th3"/>
+                    <constraint firstAttribute="bottom" secondItem="Zyn-lR-wwC" secondAttribute="bottom" id="L0a-f1-0u8"/>
+                    <constraint firstAttribute="trailing" secondItem="Zyn-lR-wwC" secondAttribute="trailing" id="P7J-MA-uM7"/>
+                    <constraint firstItem="Zyn-lR-wwC" firstAttribute="leading" secondItem="Tdh-lc-fgl" secondAttribute="leading" id="btf-eT-aP5"/>
+                    <constraint firstAttribute="bottom" secondItem="RCM-mo-h5F" secondAttribute="bottom" constant="2" id="d18-7W-gbw"/>
+                    <constraint firstAttribute="trailing" secondItem="RCM-mo-h5F" secondAttribute="trailing" constant="5" id="hNO-XK-ng0"/>
+                    <constraint firstAttribute="bottom" secondItem="026-cM-ELS" secondAttribute="bottom" constant="2" id="nv3-qE-qvn"/>
+                    <constraint firstItem="026-cM-ELS" firstAttribute="leading" secondItem="Tdh-lc-fgl" secondAttribute="leading" id="omE-1W-wAN"/>
+                    <constraint firstItem="026-cM-ELS" firstAttribute="top" secondItem="Tdh-lc-fgl" secondAttribute="top" constant="2" id="uX0-h4-rl7"/>
+                    <constraint firstItem="RCM-mo-h5F" firstAttribute="top" secondItem="Tdh-lc-fgl" secondAttribute="top" constant="2" id="veI-aj-s8l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectedIndicator" destination="026-cM-ELS" id="bV6-Sd-Lrc"/>
+                <outlet property="titleLabel" destination="RCM-mo-h5F" id="hWF-qd-zVd"/>
+            </connections>
+            <point key="canvasLocation" x="317" y="400"/>
+        </tableViewCell>
+    </objects>
+</document>

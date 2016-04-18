@@ -1,0 +1,29 @@
+//
+//  hylPrefixHeader.pch
+//  百思不得姐
+//
+//  Created by SuperHyl on 16/4/1.
+//  Copyright © 2016年 hyl. All rights reserved.
+//
+
+#ifndef hylPrefixHeader_pch
+#define hylPrefixHeader_pch
+
+#import "UIView+hylExtension.h" 
+#import "UIBarButtonItem+hylExtension.h"
+#import "hylConst.h"
+#import "NSDate+hylExtension.h"
+
+#ifdef DEBUG
+#define HYLLog(...) NSLog(__VA_ARGS__)
+#else
+#define HYLLog(...)
+#endif
+
+#define HYLLogFunc HYLLog(@"%s", __func__)
+
+#define HYLRGBColor(R, G, B) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:1.0]
+
+#define HYLGlobalBackgroundColor HYLRGBColor(247, 247, 247)
+
+#endif /* hylPrefixHeader_pch */

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="hylTopicVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="f5i-lk-Xza" userLabel="占位图片">
+                    <rect key="frame" x="0.0" y="20" width="364" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="CCL-8F-c1g"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DPT-Fx-d6m">
+                    <rect key="frame" x="0.0" y="0.0" width="364" height="225"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEO-GX-8sw" userLabel="播放按钮">
+                    <rect key="frame" x="147" y="149" width="71" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="bQI-CQ-X6s"/>
+                        <constraint firstAttribute="width" constant="71" id="hNX-71-r8M"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="video-play"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKH-Uu-Oiz" userLabel="播放次数">
+                    <rect key="frame" x="0.0" y="202" width="38" height="18"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxv-jG-6Sa" userLabel="视频时长">
+                    <rect key="frame" x="326" y="202" width="38" height="18"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="f5i-lk-Xza" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="2sA-KX-izn"/>
+                <constraint firstItem="f5i-lk-Xza" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Dwo-rU-hhB"/>
+                <constraint firstItem="DPT-Fx-d6m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gem-h6-zu2"/>
+                <constraint firstItem="DPT-Fx-d6m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PxQ-Wb-4R6"/>
+                <constraint firstAttribute="bottom" secondItem="zEO-GX-8sw" secondAttribute="bottom" constant="5" id="lbW-MK-leV"/>
+                <constraint firstAttribute="trailing" secondItem="DPT-Fx-d6m" secondAttribute="trailing" id="tcD-LS-fm9"/>
+                <constraint firstAttribute="bottom" secondItem="DPT-Fx-d6m" secondAttribute="bottom" id="uZg-E1-MyS"/>
+                <constraint firstItem="fxv-jG-6Sa" firstAttribute="bottom" secondItem="zEO-GX-8sw" secondAttribute="bottom" id="uvE-cp-x06"/>
+                <constraint firstItem="nKH-Uu-Oiz" firstAttribute="bottom" secondItem="zEO-GX-8sw" secondAttribute="bottom" id="wJ4-Zd-fOk"/>
+                <constraint firstItem="zEO-GX-8sw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="x73-nt-lsM"/>
+                <constraint firstItem="nKH-Uu-Oiz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xWD-9h-8si"/>
+                <constraint firstAttribute="trailing" secondItem="fxv-jG-6Sa" secondAttribute="trailing" id="yTa-Ze-q0Z"/>
+                <constraint firstAttribute="trailing" secondItem="f5i-lk-Xza" secondAttribute="trailing" id="zTK-qo-yAF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="DPT-Fx-d6m" id="B1x-Vk-8bN"/>
+                <outlet property="playcountlabel" destination="nKH-Uu-Oiz" id="jpg-Sy-njZ"/>
+                <outlet property="videotimeLabel" destination="fxv-jG-6Sa" id="d0K-cV-A1x"/>
+            </connections>
+            <point key="canvasLocation" x="152" y="277.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imageBackground" width="75" height="15"/>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>
