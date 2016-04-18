@@ -74,15 +74,15 @@
         if (topic.isBigPicture == NO) return;
         
         // 开启图形上下文
-        UIGraphicsBeginImageContextWithOptions(topic.pictureViewFrame.size, YES, 0.0);
-        // 将下载完的image对象绘制到图形上下文
-        CGFloat width = topic.pictureViewFrame.size.width;
-        CGFloat height = width * image.size.height / image.size.width;
-        [image drawAsPatternInRect:CGRectMake(0, 0, width, height)];
-        // 获取图片
-        self.ImageView.image = UIGraphicsGetImageFromCurrentImageContext();
-        // 结束图形上下文
-        UIGraphicsEndImageContext();
+//        UIGraphicsBeginImageContextWithOptions(topic.pictureViewFrame.size, YES, 0.0);
+//        // 将下载完的image对象绘制到图形上下文
+//        CGFloat width = topic.pictureViewFrame.size.width;
+//        CGFloat height = width * image.size.height / image.size.width;
+//        [image drawAsPatternInRect:CGRectMake(0, 0, width, height)];
+//        // 获取图片
+//        self.ImageView.image = UIGraphicsGetImageFromCurrentImageContext();
+//        // 结束图形上下文
+//        UIGraphicsEndImageContext();
     }];
     
     

@@ -27,7 +27,7 @@
 - (void)setRecommendTag:(hylRecommendTag *)recommendTag
 {
     _recommendTag = recommendTag;
-    [self.imageListImageView sd_setImageWithURL:[NSURL URLWithString:recommendTag.image_list]];
+    [self.imageListImageView sd_setImageWithURL:[NSURL URLWithString:recommendTag.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     self.themeNameLabel.text = recommendTag.theme_name;
     
     NSString *subNumber = nil;
