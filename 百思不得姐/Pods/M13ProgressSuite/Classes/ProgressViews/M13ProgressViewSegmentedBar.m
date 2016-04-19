@@ -26,7 +26,7 @@
 /**Allow us to write to the progress.*/
 @property (nonatomic, readwrite) CGFloat progress;
 /**The layer that progress is shown on.*/
-@property (nonatomic, retain) CAShapeLayer *segmentsLayer;
+@property (nonatomic, strong) CAShapeLayer *segmentsLayer;
 /**The action currently being performed.*/
 @property (nonatomic, assign) M13ProgressViewAction currentAction;
 

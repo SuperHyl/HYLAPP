@@ -58,12 +58,6 @@
 // 初始化子控制器
 - (void)setupChildVC
 {
-    
-    hylTopicViewController *wordVC = [[hylTopicViewController alloc] init];
-    wordVC.title = @"段子";
-    wordVC.type = HYLTopicTypeWord;
-    [self addChildViewController:wordVC];
-    
     hylTopicViewController *allVC = [[hylTopicViewController alloc] init];
     allVC.title = @"全部";
     allVC.type = HYLTopicTypeAll;
@@ -83,6 +77,11 @@
     pictureVC.title = @"图片";
     pictureVC.type = HYLTopicTypePicture;
     [self addChildViewController:pictureVC];
+    
+    hylTopicViewController *wordVC = [[hylTopicViewController alloc] init];
+    wordVC.title = @"段子";
+    wordVC.type = HYLTopicTypeWord;
+    [self addChildViewController:wordVC];
     
 }
 

@@ -106,15 +106,26 @@
     if (topic.type == HYLTopicTypePicture) { // 图片帖子
         self.pictureView.topic = topic;
         self.pictureView.frame = topic.pictureViewFrame;
+        self.pictureView.hidden = NO;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
     } else if (topic.type == HYLTopicTypeVoice) { // 声音帖子
         self.voiceView.topic = topic;
         self.voiceView.frame = topic.voiceViewFrame;
+        self.voiceView.hidden = NO;
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
     } else if (topic.type == HYLTopicTypeVideo) { // 视频帖子
         self.videoView.topic = topic;
         self.videoView.frame = topic.videoViewFrame;
+        self.videoView.hidden = NO;
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
+    } else { // 段子帖子
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
     }
-    
-    
 }
 
 /*
